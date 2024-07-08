@@ -1,6 +1,7 @@
 //Завдання 1: Функція для створення символу
 function createSymbol() {
   // Повернемо символ без опису
+  return Symbol();
 }
 
 console.log("Завдання 1 ====================================");
@@ -9,7 +10,9 @@ console.log(createSymbol()); // Виведе Symbol()
 //Завдання 2: Функція для створення символу з описом та виведення опису
 function createSymbolWithDescription(property) {
   // Створюємо символ symbol з описом property
-  //Повертаємо опис символа symbol
+  let symbol = Symbol(property);
+  // Повертаємо опис символа symbol
+  return symbol.description;
 }
 
 console.log("Завдання 2 ====================================");
